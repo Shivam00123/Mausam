@@ -1,0 +1,301 @@
+.weatherCard {
+  width: 950px;
+  height: fit-content;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 15px,
+    rgba(255, 255, 255, 0.15) 0px 0px 3px 1px;
+  border-radius: 10px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.weatherAbout {
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.searchBox {
+  margin-top: 30px;
+  height: fit-content;
+  width: fit-content;
+  overflow: hidden;
+  border-radius: 10px 0 0;
+}
+.searchBox input {
+  border: none;
+  height: 30px;
+  padding: 5px;
+  font-size: 10px;
+  font-weight: 600;
+}
+.searchBox input:focus {
+  outline: none;
+}
+.searchBox button {
+  height: 30px;
+  padding: 0 6px;
+  border: none;
+  background-image: linear-gradient(#6978b5, #2da2a1);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.day {
+  margin-top: 30px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.day p {
+  font-weight: 700;
+  color: #2fe2df;
+}
+.weatherDivWrapper {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.weatherImageContainer {
+  width: 120px;
+  height: 100px;
+}
+.weatherImageContainer img {
+  width: 100%;
+  height: 100%;
+}
+.moreInfo {
+  width: 700px;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: #c4c2c2;
+}
+.temperature {
+  position: absolute;
+  top: 324px;
+  border: 1px solid white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background-image: linear-gradient(#6978b5, #2da2a1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.temperature .degree {
+  margin-top: -15px;
+}
+.temp {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+}
+.number {
+  margin-left: 5px;
+}
+.imageContainer {
+  margin-top: 105px;
+  width: 100%;
+  height: 190px;
+  background-image: url("../assets/Images/weather.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h2 {
+  color: #6978b5;
+}
+.moreWeatherInfo {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.weatherInfoDetails {
+  width: 200px;
+  height: 120px;
+  margin: 20px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.thoughtDiv {
+  margin: 50px 20px;
+}
+.thoughtDiv h3 {
+  color: #6978b5;
+}
+.thoughtDiv p {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #198a88;
+}
+.author {
+  font-size: 13px;
+  font-weight: 700;
+  color: #2c324b;
+}
+.authorName {
+  font-size: 14px;
+  font-weight: 700;
+}
+.weatherInfoDetails .infoImage {
+  width: 50px;
+  height: auto;
+  margin-top: 10px;
+}
+.weatherInfoDetails .infoImage img {
+  width: 100%;
+  height: 100%;
+}
+.weatherInfoDetails .percentage {
+  margin-top: 10px;
+  font-size: 13px;
+}
+@media screen and (max-width: 360px) {
+  .weatherCard {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .weatherAbout {
+    width: 100%;
+    height: fit-content;
+  }
+  .moreInfo {
+    width: 100%;
+  }
+  .weatherInfoDetails {
+    width: 100%;
+    height: 150px;
+  }
+  .thoughtDiv p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .weatherCard {
+    width: 100%;
+    height: fit-content;
+  }
+  .imageContainer {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 895px) {
+  .weatherAbout {
+    height: 100vh;
+  }
+  .moreInfo {
+    height: 100vh;
+    margin-bottom: 10px;
+  }
+  .weatherInfoDetails {
+    width: 180px;
+    height: 120px;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 635px) {
+  .thoughtDiv p {
+    font-size: 13px;
+  }
+  .header h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .weatherCard {
+    width: 100vw;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+  .weatherAbout {
+    width: 100%;
+    height: fit-content;
+  }
+  .moreInfo {
+    width: 100%;
+    height: fit-content;
+  }
+  .weatherInfoDetails {
+    width: 80%;
+    height: 150px;
+  }
+  .thoughtDiv p {
+    font-size: 12px;
+  }
+  .header h2 {
+    font-size: 15px;
+  }
+  .location span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .weatherCard {
+    width: 100vw;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+  .weatherAbout {
+    width: 100%;
+    height: fit-content;
+  }
+  .moreInfo {
+    width: 100%;
+    height: fit-content;
+  }
+  .weatherInfoDetails {
+    width: 80%;
+    height: 150px;
+    justify-content: center;
+  }
+  .thoughtDiv p {
+    font-size: 12px;
+  }
+  .imageContainer {
+    width: 100%;
+    height: 170px;
+    background-image: url();
+    background-color: #000;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 230px) {
+  .thoughtDiv h3 {
+    font-size: 15px;
+  }
+}

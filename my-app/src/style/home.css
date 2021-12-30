@@ -1,0 +1,19 @@
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#6978b5, #2da2a1);
+}
+@media screen and (max-height: 640px) {
+  .home {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .home {
+    height: 100%;
+    width: 100%;
+  }
+}
